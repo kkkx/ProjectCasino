@@ -7,12 +7,17 @@ import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 /**
@@ -50,6 +55,15 @@ public class mainhub extends Activity {
      */
     private SystemUiHider mSystemUiHider;
 
+
+    Timer timer = new Timer( );
+    TimerTask task = new TimerTask( ) {
+        public void run ( ) {
+            Message message = new Message( );
+            message.what = 1;
+            handler.sendMessage(message);
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -144,6 +158,10 @@ public class mainhub extends Activity {
                 return false;
             }
         });
+        timer.schedule(task,1000,5000);
+    }
+
+    void update(){
         Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);//加载动画资源文件
         findViewById(R.id.mainhubStory).startAnimation(shake); //给组件播放动画效果
     }
@@ -190,4 +208,23 @@ public class mainhub extends Activity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
+
+    final Handler handler = new Handler( ) {
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case 1:
+                    update();
+                    break;
+            }
+            super.handleMessage(msg);
+        }
+    };
+    protected void onDestroy ( ) {
+        if (timer != null) {
+            timer.cancel( );
+            timer = null;
+        }
+        super.onDestroy();
+    }
+
 }
