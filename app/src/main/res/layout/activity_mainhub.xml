@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/fullscreen_content"
+    android:layout_height="match_parent" android:background="@drawable/mainhubbgfi" tools:context=".mainhub">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button android:id="@+id/dummy_button" style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/mainhubexit" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true" android:textColor="#eeeeee"
+            android:textStyle="bold" android:textSize="50sp"
+            android:text="@string/mainhubTitle"
+            android:id="@+id/mainHubTitle"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="400dp"
+            android:layout_above="@+id/fullscreen_content_controls"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainhubSetting"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/setting"
+            android:layout_marginBottom="35dp"
+            android:layout_alignBottom="@+id/mainhubStory"
+            android:layout_toRightOf="@+id/mainhubStory"
+            android:layout_toEndOf="@+id/mainhubStory" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainhubStory"
+            android:src="@drawable/storymode"
+            android:background="@android:color/transparent"
+            android:layout_above="@+id/fullscreen_content_controls"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="38dp"
+            android:layout_toStartOf="@+id/mainhubGame"
+            android:layout_toLeftOf="@+id/mainhubGame" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainhubGame"
+            android:background="@android:color/transparent"
+            android:src="@drawable/casinomode"
+            android:layout_above="@+id/mainhubSetting"
+            android:layout_alignRight="@+id/mainHubTitle"
+            android:layout_alignEnd="@+id/mainHubTitle"
+            android:layout_marginBottom="31dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
