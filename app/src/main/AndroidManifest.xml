@@ -18,6 +18,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BlackJack"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_black_jack"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".Rolette"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_rolette"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".Barkeep"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_barkeep"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
     </application>
 
 </manifest>

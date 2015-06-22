@@ -162,8 +162,8 @@ public class mainhub extends Activity {
     }
 
     void update(){
-        Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);//加载动画资源文件
-        findViewById(R.id.mainhubStory).startAnimation(shake); //给组件播放动画效果
+        Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);
+        findViewById(R.id.mainhubStory).startAnimation(shake);
     }
 
     @Override

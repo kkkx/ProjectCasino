@@ -3,4 +3,12 @@
 
     <string name="mainhubexit">Exit</string>
     <string name="mainhubTitle">Monte Carlo</string>
+
+    <string name="title_activity_black_jack">BlackJack</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_rolette">Rolette</string>
+
+    <string name="title_activity_barkeep">Barkeep</string>
 </resources>
