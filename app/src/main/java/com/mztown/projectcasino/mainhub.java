@@ -150,10 +150,10 @@ public class mainhub extends Activity {
             public boolean onTouch(View v, MotionEvent event) {
 
                 if(event.getAction()==MotionEvent.ACTION_DOWN){
-                    ((ImageButton)v).setImageDrawable(getResources().getDrawable(R.drawable.casinomode_2));
+                    ((ImageButton)v).setImageDrawable(getResources().getDrawable(R.drawable.storymode_2));
                 }
                 else if(event.getAction()==MotionEvent.ACTION_UP){
-                    ((ImageButton)v).setImageDrawable(getResources().getDrawable(R.drawable.casinomode));
+                    ((ImageButton)v).setImageDrawable(getResources().getDrawable(R.drawable.storymode));
                 }
                 return false;
             }
