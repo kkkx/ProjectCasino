@@ -280,6 +280,62 @@
             android:name=".final3"
             android:label="@string/title_activity_final3" >
         </activity>
+        <activity
+            android:name=".final4"
+            android:label="@string/title_activity_final4" >
+        </activity>
+        <activity
+            android:name=".final5"
+            android:label="@string/title_activity_final5" >
+        </activity>
+        <activity
+            android:name=".final6"
+            android:label="@string/title_activity_final6" >
+        </activity>
+        <activity
+            android:name=".final7"
+            android:label="@string/title_activity_final7" >
+        </activity>
+        <activity
+            android:name=".final8"
+            android:label="@string/title_activity_final8" >
+        </activity>
+        <activity
+            android:name=".final9"
+            android:label="@string/title_activity_final9" >
+        </activity>
+        <activity
+            android:name=".final10"
+            android:label="@string/title_activity_final10" >
+        </activity>
+        <activity
+            android:name=".final11"
+            android:label="@string/title_activity_final11" >
+        </activity>
+        <activity
+            android:name=".fianl12"
+            android:label="@string/title_activity_fianl12" >
+        </activity>
+        <activity
+            android:name=".final13"
+            android:label="@string/title_activity_final13" >
+        </activity>
+        <activity
+            android:name=".final14"
+            android:label="@string/title_activity_final14" >
+        </activity>
+        <activity
+            android:name=".final15"
+            android:label="@string/title_activity_final15" >
+        </activity>
+        <activity
+            android:name=".final16"
+            android:label="@string/title_activity_final16" >
+        </activity>
+        <activity
+            android:name=".final12"
+            android:label="@string/title_activity_final12" >
+        </activity>
     </application>
 
 </manifest>
