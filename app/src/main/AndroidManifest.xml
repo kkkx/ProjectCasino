@@ -36,6 +36,250 @@
             android:label="@string/title_activity_barkeep"
             android:theme="@style/FullscreenTheme" >
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".level1_1"
+            android:label="@string/title_activity_level1_1" >
+        </activity>
+        <activity
+            android:name=".level1_2"
+            android:label="@string/title_activity_level1_2" >
+        </activity>
+        <activity
+            android:name=".level1_3"
+            android:label="@string/title_activity_level1_3" >
+        </activity>
+        <activity
+            android:name=".level1_4"
+            android:label="@string/title_activity_level1_4" >
+        </activity>
+        <activity
+            android:name=".level1_5"
+            android:label="@string/title_activity_level1_5" >
+        </activity>
+        <activity
+            android:name=".level1_6"
+            android:label="@string/title_activity_level1_6" >
+        </activity>
+        <activity
+            android:name=".level1_7"
+            android:label="@string/title_activity_level1_7" >
+        </activity>
+        <activity
+            android:name=".level1_8"
+            android:label="@string/title_activity_level1_8" >
+        </activity>
+        <activity
+            android:name=".level1_9"
+            android:label="@string/title_activity_level1_9" >
+        </activity>
+        <activity
+            android:name=".level1_10"
+            android:label="@string/title_activity_level1_10" >
+        </activity>
+        <activity
+            android:name=".level1_11"
+            android:label="@string/title_activity_level1_11" >
+        </activity>
+        <activity
+            android:name=".level1_12"
+            android:label="@string/title_activity_level1_12" >
+        </activity>
+        <activity
+            android:name=".level1_13"
+            android:label="@string/title_activity_level1_13" >
+        </activity>
+        <activity
+            android:name=".level1_14"
+            android:label="@string/title_activity_level1_14" >
+        </activity>
+        <activity
+            android:name=".level1_15"
+            android:label="@string/title_activity_level1_15" >
+        </activity>
+        <activity
+            android:name=".level1_16"
+            android:label="@string/title_activity_level1_16" >
+        </activity>
+        <activity
+            android:name=".level1_17"
+            android:label="@string/title_activity_level1_17" >
+        </activity>
+        <activity
+            android:name=".level1_18"
+            android:label="@string/title_activity_level1_18" >
+        </activity>
+        <activity
+            android:name=".level1_19"
+            android:label="@string/title_activity_level1_19" >
+        </activity>
+        <activity
+            android:name=".level1_20"
+            android:label="@string/title_activity_level1_20" >
+        </activity>
+        <activity
+            android:name=".level1_21"
+            android:label="@string/title_activity_level1_21" >
+        </activity>
+        <activity
+            android:name=".level1_22"
+            android:label="@string/title_activity_level1_22" >
+        </activity>
+        <activity
+            android:name=".level1_23"
+            android:label="@string/title_activity_level1_23" >
+        </activity>
+        <activity
+            android:name=".level1_24"
+            android:label="@string/title_activity_level1_24" >
+        </activity>
+        <activity
+            android:name=".level1_25"
+            android:label="@string/title_activity_level1_25" >
+        </activity>
+        <activity
+            android:name=".level2_1"
+            android:label="@string/title_activity_level2_1" >
+        </activity>
+        <activity
+            android:name=".level2_2"
+            android:label="@string/title_activity_level2_2" >
+        </activity>
+        <activity
+            android:name=".level2_3"
+            android:label="@string/title_activity_level2_3" >
+        </activity>
+        <activity
+            android:name=".level2_4"
+            android:label="@string/title_activity_level2_4" >
+        </activity>
+        <activity
+            android:name=".level2_5"
+            android:label="@string/title_activity_level2_5" >
+        </activity>
+        <activity
+            android:name=".level2_6"
+            android:label="@string/title_activity_level2_6" >
+        </activity>
+        <activity
+            android:name=".level2_7"
+            android:label="@string/title_activity_level2_7" >
+        </activity>
+        <activity
+            android:name=".level2_8"
+            android:label="@string/title_activity_level2_8" >
+        </activity>
+        <activity
+            android:name=".level2_9"
+            android:label="@string/title_activity_level2_9" >
+        </activity>
+        <activity
+            android:name=".level2_10"
+            android:label="@string/title_activity_level2_10" >
+        </activity>
+        <activity
+            android:name=".level2_11"
+            android:label="@string/title_activity_level2_11" >
+        </activity>
+        <activity
+            android:name=".level2_12"
+            android:label="@string/title_activity_level2_12" >
+        </activity>
+        <activity
+            android:name=".level2_13"
+            android:label="@string/title_activity_level2_13" >
+        </activity>
+        <activity
+            android:name=".level2_14"
+            android:label="@string/title_activity_level2_14" >
+        </activity>
+        <activity
+            android:name=".level2_15"
+            android:label="@string/title_activity_level2_15" >
+        </activity>
+        <activity
+            android:name=".level2_16"
+            android:label="@string/title_activity_level2_16" >
+        </activity>
+        <activity
+            android:name=".level2_17"
+            android:label="@string/title_activity_level2_17" >
+        </activity>
+        <activity
+            android:name=".level2_18"
+            android:label="@string/title_activity_level2_18" >
+        </activity>
+        <activity
+            android:name=".level2_19"
+            android:label="@string/title_activity_level2_19" >
+        </activity>
+        <activity
+            android:name=".level2_20"
+            android:label="@string/title_activity_level2_20" >
+        </activity>
+        <activity
+            android:name=".level2_21"
+            android:label="@string/title_activity_level2_21" >
+        </activity>
+        <activity
+            android:name=".level2_22"
+            android:label="@string/title_activity_level2_22" >
+        </activity>
+        <activity
+            android:name=".level3_1"
+            android:label="@string/title_activity_level3_1" >
+        </activity>
+        <activity
+            android:name=".level3_2"
+            android:label="@string/title_activity_level3_2" >
+        </activity>
+        <activity
+            android:name=".level3_3"
+            android:label="@string/title_activity_level3_3" >
+        </activity>
+        <activity
+            android:name=".level3_4"
+            android:label="@string/title_activity_level3_4" >
+        </activity>
+        <activity
+            android:name=".level3_5"
+            android:label="@string/title_activity_level3_5" >
+        </activity>
+        <activity
+            android:name=".level3_6"
+            android:label="@string/title_activity_level3_6" >
+        </activity>
+        <activity
+            android:name=".level3_7"
+            android:label="@string/title_activity_level3_7" >
+        </activity>
+        <activity
+            android:name=".level3_8"
+            android:label="@string/title_activity_level3_8" >
+        </activity>
+        <activity
+            android:name=".level3_9"
+            android:label="@string/title_activity_level3_9" >
+        </activity>
+        <activity
+            android:name=".level3_10"
+            android:label="@string/title_activity_level3_10" >
+        </activity>
+        <activity
+            android:name=".final1"
+            android:label="@string/title_activity_final1" >
+        </activity>
+        <activity
+            android:name=".final2"
+            android:label="@string/title_activity_final2" >
+        </activity>
+        <activity
+            android:name=".final3"
+            android:label="@string/title_activity_final3" >
+        </activity>
     </application>
 
 </manifest>
