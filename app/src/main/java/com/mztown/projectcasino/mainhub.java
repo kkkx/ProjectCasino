@@ -4,6 +4,7 @@ import com.mztown.projectcasino.util.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -157,8 +158,17 @@ public class mainhub extends Activity {
                 }
                 return false;
             }
+
         });
-        timer.schedule(task,1000,5000);
+        timer.schedule(task, 1000, 5000);
+        mainhubGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(mainhub.this,level1_1.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     void update(){

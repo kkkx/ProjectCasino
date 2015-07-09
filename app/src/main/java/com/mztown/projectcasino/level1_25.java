@@ -14,7 +14,7 @@ public class level1_25 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level1_25);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-        ImageButton btn25=(ImageButton)findViewById(R.id.imageButton25);  
+        ImageButton btn25=(ImageButton)findViewById(R.id.imageButton25);
     }
 
     @Override
