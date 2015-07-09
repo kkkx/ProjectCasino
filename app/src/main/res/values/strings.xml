@@ -71,4 +71,7 @@
     <string name="title_activity_level3_8">level3_8</string>
     <string name="title_activity_level3_9">level3_9</string>
     <string name="title_activity_level3_10">level3_10</string>
+    <string name="title_activity_final1">final1</string>
+    <string name="title_activity_final2">final2</string>
+    <string name="title_activity_final3">final3</string>
 </resources>

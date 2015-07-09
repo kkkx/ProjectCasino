@@ -268,6 +268,18 @@
             android:name=".level3_10"
             android:label="@string/title_activity_level3_10" >
         </activity>
+        <activity
+            android:name=".final1"
+            android:label="@string/title_activity_final1" >
+        </activity>
+        <activity
+            android:name=".final2"
+            android:label="@string/title_activity_final2" >
+        </activity>
+        <activity
+            android:name=".final3"
+            android:label="@string/title_activity_final3" >
+        </activity>
     </application>
 
 </manifest>
