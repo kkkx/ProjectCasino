@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 
 public class level3_10 extends ActionBarActivity {
@@ -12,6 +13,7 @@ public class level3_10 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level3_10);
+        ImageButton btn57=(ImageButton)findViewById(R.id.imageButton57);
     }
 
     @Override
