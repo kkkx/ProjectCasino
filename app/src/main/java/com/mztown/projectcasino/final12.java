@@ -9,27 +9,28 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-public class final7 extends ActionBarActivity {
+public class final12 extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_final7);
-        ImageButton btn64=(ImageButton)findViewById(R.id.imageButton64);
-        btn64.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_final12);
+        ImageButton btn69=(ImageButton)findViewById(R.id.imageButton69);
+        btn69.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(final7.this, final8.class);
+                Intent intent = new Intent(final12.this, final13.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_final7, menu);
+        getMenuInflater().inflate(R.menu.menu_final12, menu);
         return true;
     }
 

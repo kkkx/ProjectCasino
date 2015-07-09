@@ -332,6 +332,10 @@
             android:name=".final16"
             android:label="@string/title_activity_final16" >
         </activity>
+        <activity
+            android:name=".final12"
+            android:label="@string/title_activity_final12" >
+        </activity>
     </application>
 
 </manifest>
