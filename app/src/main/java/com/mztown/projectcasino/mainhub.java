@@ -16,6 +16,7 @@ import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -72,6 +73,10 @@ public class mainhub extends Activity {
         setContentView(R.layout.activity_mainhub);
 
         DBOperation dbo=new DBOperation(this);
+
+        TextView onlineBroad=(TextView)findViewById(R.id.mainhubOnlineUser);
+        onlineBroad.setText("Welcome to Mont-Carlo,"+dbo.GetOnlineUser());
+
         dbo.Close();
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
         final View contentView = findViewById(R.id.fullscreen_content);

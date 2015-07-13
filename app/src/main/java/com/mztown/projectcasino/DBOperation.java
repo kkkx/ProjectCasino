@@ -28,9 +28,7 @@ public class DBOperation {
     public DBOperation(Context context){                         //获得数据库连接，获得当前用户名
         sqlConnection=new SQLConnection(context);
         db=sqlConnection.getWritableDatabase();
-        if(GetOnlineUser()==null||GetOnlineUser()==""){
-            AutoNewUser();
-        }
+        try{GetOnlineUser();}catch (Exception e){AutoNewUser();}
         this.context=context;
     }
 
@@ -51,10 +49,11 @@ public class DBOperation {
         db.execSQL("UPDATE user SET checkpoint = "+level+" WHERE inplay = 1");
     }
 
-    private void AutoNewUser(){                    //第一次游戏自动创建用户！内部调用！
+    private void AutoNewUser(){                    //第一次游戏自动创建用户！内部调用！.
+        String a = String.valueOf((int)(Math.random() * 9999)) ;
         String sqlexe="UPDATE user SET inplay = '0' WHERE inplay = 1";
         db.execSQL(sqlexe);
-        sqlexe="INSERT INTO user VALUES ('NewUser','1','1','1000')";
+        sqlexe="INSERT INTO user VALUES ('NewPlayer"+a+"','1','1','1000')";
         db.execSQL(sqlexe);
     }
 
@@ -67,6 +66,7 @@ public class DBOperation {
 
     public void Reset(){                           //重置关卡进度
         db.execSQL("UPDATE user SET checkpoint = 1 WHERE inplay = 1");
+        Toast.makeText(context,"Game Progress Reset",Toast.LENGTH_SHORT).show();
     }
 
     public void UserRename(String newname){        //用户选择改名

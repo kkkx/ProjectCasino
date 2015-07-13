@@ -20,6 +20,7 @@ public class level1_1 extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(level1_1.this, level1_2.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             }
