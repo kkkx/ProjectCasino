@@ -11,7 +11,7 @@ public class fianl12 extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fianl12);
+        setContentView(R.layout.activity_final12);
     }
 
     @Override

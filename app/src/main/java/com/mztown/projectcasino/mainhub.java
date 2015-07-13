@@ -71,8 +71,11 @@ public class mainhub extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_mainhub);
 
+        DBOperation dbo=new DBOperation(this);
+        dbo.Close();
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
         final View contentView = findViewById(R.id.fullscreen_content);
+        //final User user = (User)getApplication();
 
         // Set up an instance of SystemUiHider to control the system UI for
         // this activity.
@@ -132,6 +135,14 @@ public class mainhub extends Activity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        findViewById(R.id.dummy_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(0);
+
+            }
+        });
         ImageButton mainhubSetting=(ImageButton)findViewById(R.id.mainhubSetting);
         mainhubSetting.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -143,6 +154,12 @@ public class mainhub extends Activity {
                     ((ImageButton) v).setImageDrawable(getResources().getDrawable(R.drawable.setting));
                 }
                 return false;
+            }
+        });
+        mainhubSetting.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(mainhub.this,Settings.class);
+                startActivity(intent);
             }
         });
         ImageButton mainhubGame=(ImageButton)findViewById(R.id.mainhubGame);
@@ -164,8 +181,19 @@ public class mainhub extends Activity {
         mainhubGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(mainhub.this,level1_1.class);
-                startActivity(intent);
+                DBOperation dbo=new DBOperation(mainhub.this);
+                int checkpoint = dbo.GetCheckpoint();
+                if(checkpoint==1) {
+                    Intent intent = new Intent(mainhub.this, level1_1.class);
+                    startActivity(intent);
+                }else if(checkpoint ==2){
+                    Intent intent = new Intent(mainhub.this, level2_1.class);
+                    startActivity(intent);
+                }else if(checkpoint ==3){
+                    Intent intent = new Intent(mainhub.this, level3_1.class);
+                    startActivity(intent);
+                }
+                dbo.Close();
             }
         });
 

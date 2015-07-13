@@ -24,6 +24,9 @@ public class level3_1 extends ActionBarActivity {
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
+        DBOperation dbo=new DBOperation(this);
+        dbo.PutCheckpoint(3);
+        dbo.Close();
     }
 
     @Override

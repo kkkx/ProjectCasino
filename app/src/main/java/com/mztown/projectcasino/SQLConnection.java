@@ -17,23 +17,23 @@ public class SQLConnection extends SQLiteOpenHelper {
         SQLConnection.context=context;
     }
 
-    public SQLConnection(){
+    public SQLConnection(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String Sql="CREATE TABLE user("+"uid VARCHAR(30) NOT NULL,"+"checkpoint int,"+"inplay int NOT NULL);";
+        String Sql="CREATE TABLE user("+
+                "uid VARCHAR(30) NOT NULL,"+
+                "checkpoint int,"+
+                "inplay int," +
+                "cash int);";
         db.execSQL(Sql);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    }
-    public SQLiteDatabase getConnection(){
-        SQLiteDatabase db=getWritableDatabase();
-        return db;
     }
 
     public void close(SQLiteDatabase db){

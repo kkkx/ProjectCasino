@@ -16,7 +16,14 @@ public class level2_22 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level2_22);
         ImageButton btn47=(ImageButton)findViewById(R.id.imageButton47);
-
+        btn47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(level2_22.this, level3_1.class);
+                startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
     }
 
     @Override

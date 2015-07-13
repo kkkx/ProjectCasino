@@ -1,9 +1,11 @@
 package com.mztown.projectcasino;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageButton;
 
 
@@ -14,6 +16,14 @@ public class level3_10 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level3_10);
         ImageButton btn57=(ImageButton)findViewById(R.id.imageButton57);
+        btn57.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(level3_10.this, final1.class);
+                startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
     }
 
     @Override
