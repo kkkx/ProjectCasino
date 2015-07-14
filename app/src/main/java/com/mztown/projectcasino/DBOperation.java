@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -60,6 +61,11 @@ public class DBOperation {
 //    public void UserCheckout(){                     //切换用户
 //    }
 
+
+    public void DeleteUser(String uid){
+        db.execSQL("DELETE FROM user WHERE uid ='"+uid+"'");
+    }
+
     public void NewUser(){                     //用户选择创建用户
         AutoNewUser();
     }
@@ -84,6 +90,11 @@ public class DBOperation {
 
     public String MasterDBControl(String sqlexec){ //调试用sql操作
         return sqlexec;
+    }
+
+    public Cursor GetUserList(){
+        final Cursor cursor=db.rawQuery("SELECT uid AS _id FROM user WHERE inplay <> 1",null);
+        return cursor;
     }
 
     public void Close(){

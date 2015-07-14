@@ -75,7 +75,7 @@ public class mainhub extends Activity {
         DBOperation dbo=new DBOperation(this);
 
         TextView onlineBroad=(TextView)findViewById(R.id.mainhubOnlineUser);
-        onlineBroad.setText("Welcome to Mont-Carlo,"+dbo.GetOnlineUser());
+        onlineBroad.setText("Welcome to Mont Carlo,"+dbo.GetOnlineUser());
 
         dbo.Close();
         final View controlsView = findViewById(R.id.fullscreen_content_controls);

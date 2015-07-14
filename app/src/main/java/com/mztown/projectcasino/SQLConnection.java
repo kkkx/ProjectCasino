@@ -25,7 +25,7 @@ public class SQLConnection extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String Sql="CREATE TABLE user("+
-                "uid VARCHAR(30) NOT NULL,"+
+                "uid VARCHAR(30) NOT NULL PRIMARY KEY,"+
                 "checkpoint int,"+
                 "inplay int," +
                 "cash int);";
