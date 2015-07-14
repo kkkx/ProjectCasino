@@ -90,4 +90,6 @@
     <string name="title_activity_final17">final17</string>
     <string name="title_activity_final12">final12</string>
     <string name="title_activity_settings">Settings</string>
+
+    <string name="title_activity_blackjack_dummy">Blackjack_dummy</string>
 </resources>
