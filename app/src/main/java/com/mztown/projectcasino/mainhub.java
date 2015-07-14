@@ -161,9 +161,9 @@ public class mainhub extends Activity {
                 return false;
             }
         });
-        mainhubSetting.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(mainhub.this,Settings.class);
+        mainhubSetting.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(mainhub.this, Settings.class);
                 startActivity(intent);
             }
         });
@@ -183,6 +183,14 @@ public class mainhub extends Activity {
 
         });
         timer.schedule(task, 1000, 5000);
+        ImageButton mainhubStory=(ImageButton)findViewById(R.id.mainhubStory);
+        mainhubStory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mainhub.this, Blackjack_dummy.class);
+                startActivity(intent);
+            }
+        });
         mainhubGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
